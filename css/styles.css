@@ -1,0 +1,135 @@
+/*
+White: #FFFFFF
+Light green: #00FF7E 
+Green: #17FF00
+Yellow: #C8FF00
+Black: #000000
+*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    font-size: .75rem;
+    margin: 0 2rem;
+}
+
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.masthead {
+    background-image: url("../img/leaf.jpg");
+    height: 200px;
+}
+
+.tag-line {
+    color: #FFFFFF;
+    position: relative;
+    top: 75px;
+    left: 20px;
+    margin: 0 auto;
+}
+
+nav a {
+    display: block;
+    background-color: #C8FF00;
+    color: #000000; 
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+header {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #00FF7E; 
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+article {
+    margin: 2rem;
+}
+
+article img {
+    max-width: 80%;
+    padding: 2rem;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.tiles li {
+    list-style: none;
+    text-align: center;
+}
+
+.tiles img {
+    max-height: 300px;
+    width: auto;
+}
+
+footer a {
+    font-size: 30px;
+    color: #000000;
+    padding-right: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80rem;
+    margin: 0 auto;
+    }
+
+@media only screen and (min-width: 35rem) {
+	body {
+        font-size: 1rem;
+    }
+    
+    nav {
+        display: flex;
+        justify-content:space-around;
+    }
+    
+    nav a {
+        display: inline-block;
+    }
+    
+    article img {
+        width: 25%;
+        height: auto;
+        float: left;
+    }
+    
+    p {
+        padding-bottom: 3rem;
+    }
+    
+    .tiles {
+        display: grid;
+        grid-column-gap: 25px;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    body {
+        font-size: 1.25rem;
+    }
+    
+    .tiles {
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-columns: auto auto auto;
+    }
+    
+}
