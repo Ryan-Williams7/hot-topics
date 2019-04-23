@@ -2,7 +2,7 @@ const navItems = document.querySelectorAll("header nav a");
 const container = document.querySelector(".container");
 
 
-
+let path = "https://ryan-williams7.github.io/hot-topics/partials/home.html";
 
 
 function handleClick(ev) {
